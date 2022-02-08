@@ -19,7 +19,9 @@
       <span class="top_element_middle">Стажировки</span>
       <span class="top_element">Контакты</span>
       <span class="top_button_left">TEXT</span>
-      <span class="top_button_right">Регистрация </span>
+      <span class="top_button_right">
+        <a href="/landingpage.html#reg">Регистрация</a>
+      </span>
     </header>
     <div class="occupation">
       <div class="occupation_content">
@@ -28,7 +30,10 @@
           Регистрируйтесь на стажировку сейчас, и займите свое место <br />
           среди преподавательского состава лучших университетов нашей страны!
         </h2>
-        <h2 class="occupation_content_button">Быстрая Регистрация!</h2>
+
+        <a href="/landingpage.html#reg">
+          <h2 class="occupation_content_button">Быстрая Регистрация!</h2></a
+        >
       </div>
     </div>
     <main>
@@ -137,6 +142,52 @@
           Трудоустройство по окончанию стажировки
         </div>
       </div>
+    </div>
+    <div class="registration" id="reg">
+      <form class="registarion_form">
+        <h4><b> Регистрация на участие в программе онлайн-стажировки</b></h4>
+        <input
+          type="text"
+          class="registarion_form_name"
+          placeholder="Имя"
+          name=""
+          id="user_name"
+        />
+        <input
+          type="text"
+          class="registarion_form_surname"
+          placeholder="Фамилия"
+          name=""
+          id="user_surname"
+        />
+        <input
+          type="text"
+          class="registarion_form_text"
+          placeholder="Должность"
+          name=""
+          id="user_position"
+        />
+        <input
+          type="text"
+          class="registarion_form_text"
+          placeholder="Телефон"
+          name=""
+          id="user_telephone"
+        />
+        <input
+          type="email"
+          class="registarion_form_text"
+          placeholder="Электронный адрес"
+          name=""
+          id="user_email"
+        />
+        
+          <input
+            type="submit"
+            class="registration_button"
+            value="Отправить заявку!"
+        />
+      </form>
     </div>
   </body>
 </html>
