@@ -5,7 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
-  letter-spacing: 2.25px;
+  letter-spacing: 1.5px;
 }
 .top {
   height: 120px;
@@ -81,7 +81,6 @@ html {
   transform: translate(-50%, -50%);
   font-size: 32px;
   width: fit-content;
- 
 }
 a {
   text-decoration: none;
@@ -202,7 +201,7 @@ li {
   margin-left: 27px;
 }
 .advertising {
-  height: 120px;
+  height: 135px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,7 +212,7 @@ li {
 }
 .facts {
   background: #fffcf7;
-  height: 250vh;
+  height: 355vh;
   padding-top: 125px;
 }
 .facts_titles {
@@ -238,6 +237,73 @@ li {
 .facts_titles_list_el {
   margin-bottom: 10px;
 }
+.facts_review,
+.facts_review_2 {
+  background: #e6e6e6;
+  width: 900px;
+  height: 520px;
+
+  border-radius: 25px;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding-top: 97.5px;
+  padding-left: 65px;
+}
+.facts_review {
+  position: absolute;
+  right: 100px;
+}
+.facts_review_2 {
+  position: absolute;
+  right: 100px;
+  margin-top: 570px;
+}
+.facts_review_image {
+  border-radius: 100px;
+  display: inline;
+}
+.facts_review_button_1,
+.facts_review_button_2 {
+  box-sizing: border-box;
+  background-color: #7e7e7e;
+  width: 85px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facts_review_button_1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 25px 0 0;
+}
+.facts_review_button_2 {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  border-radius: 0 0 25px 0;
+}
+.facts_text {
+  width: 480px;
+  box-sizing: border-box;
+  position: relative;
+  left: 160px;
+  top: 40px;
+}
+.facts_review_area {
+  position: absolute;
+  top: 105px;
+  left: 335px;
+  /* width: 390px; */
+  width: 500px;
+  box-sizing: border-box;
+}
+.facts_review_area_text {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
 h3 {
   font-size: 32px;
   text-align: center;
@@ -251,6 +317,7 @@ h4 {
 }
 .advantages {
   padding-top: 280px;
+  margin-bottom: 425px;
 }
 .advantages_element_1,
 .advantages_element_2,
@@ -279,7 +346,7 @@ h4 {
 }
 .registration {
   box-shadow: 0px -5px 50px rgba(0, 0, 0, 0.5);
-  height: calc(100vh - 100px);
+  height: calc(105vh - 100px);
   background: url(../images/registration_photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -328,4 +395,56 @@ input[type="submit"] {
 }
 .registarion_form_text {
   width: 97%;
+}
+.bottom {
+  background-color: #fffcf7;
+  height: 90vh;
+  box-sizing: border-box;
+}
+.bottom_area_1 {
+  font-size: 36px;
+  position: relative;
+  left: 220px;
+  top: 160px;
+  display: inline;
+}
+.bottom_area_2 {
+  display: inline;
+  box-sizing: border-box;
+  font-size: 36px;
+  position: absolute;
+  left: 820px;
+  margin-top: -152.5px;
+  width: 730px;
+  height: 415px;
+}
+.bottom_area_grid {
+  padding-top: 15px;
+  width: 100%;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.bottom_area_grid_el {
+  background: #faf7f3;
+  width: 140px;
+  height: 140px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_area_image {
+  margin-right: 45px;
+  border-radius: 23px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bottom_2 {
+  background-color: #4d4640;
+  height: 7vh;
+  box-sizing: border-box;
+  box-shadow: inset 0 -20px 20px -20px rgba(0, 0, 0, 0.6);
 }
