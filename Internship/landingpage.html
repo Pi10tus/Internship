@@ -144,7 +144,7 @@
       </div>
     </div>
     <div class="registration" id="reg">
-      <form class="registarion_form" action="./scripts/send.php" method="post">
+      <form class="registarion_form" id="register_form" >
         <h4><b> Регистрация на участие в программе онлайн-стажировки</b></h4>
         <input
           type="text"
@@ -188,11 +188,15 @@
         />
 
         <input
-          type="submit"
+          id="btn_submit"
+          type="button"
           class="registration_button"
           value="Отправить заявку!"
         />
       </form>
+      
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/formEmail.js"></script>
   </body>
 </html>
