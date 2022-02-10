@@ -212,7 +212,7 @@
       </div>
     </div>
     <div class="registration" id="reg">
-      <form class="registarion_form" id="register_form" > 
+      <form class="registarion_form" id="register_form" >
         <h4><b> Регистрация на участие в программе онлайн-стажировки</b></h4>
         <input
           type="text"
@@ -220,6 +220,7 @@
           placeholder="Имя"
           name=""
           id="user_name"
+          required
         />
         <input
           type="text"
@@ -227,6 +228,7 @@
           placeholder="Фамилия"
           name=""
           id="user_surname"
+          required
         />
         <input
           type="text"
@@ -234,11 +236,12 @@
           placeholder="Должность"
           name=""
           id="user_position"
+          required
         />
         <input
           type="text"
           class="registarion_form_text"
-          placeholder="Телефон"
+          placeholder="+38 (099) 99-99-999"
           name=""
           id="user_telephone"
         />
@@ -248,6 +251,7 @@
           placeholder="Электронный адрес"
           name=""
           id="user_email"
+          required
         />
 
         <input
@@ -257,7 +261,15 @@
           value="Отправить заявку!"
         />
       </form>
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://unpkg.com/imask"></script>
+      <script>
+        
+        var phoneMask = IMask(
+          document.getElementById('user_telephone'), {
+          mask: '+{38}(000)000-00-00'
+        });
+      </script>
     </div>
     <div class="advertising"></div>
     <div class="bottom">
@@ -317,7 +329,7 @@
       </div>
     </div>
     <div class="bottom_2"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./scripts/formEmail.js"></script>
   </body>
+    <script src="./scripts/formEmail.js"></script>
+    
 </html>
